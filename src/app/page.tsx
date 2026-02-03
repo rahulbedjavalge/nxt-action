@@ -44,14 +44,8 @@ export default function LandingPage() {
               className="p-2 rounded-lg text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800"
               aria-label="Toggle theme"
             >
-              {theme === "light" ? "" : ""}
+              {theme === "light" ? "🌙" : "☀️"}
             </button>
-            <Button
-              size="sm"
-              onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
-            >
-              Sign In
-            </Button>
           </div>
         </div>
       </header>
@@ -70,15 +64,8 @@ export default function LandingPage() {
             A dead-simple personal task manager for people who need to remember 
             to follow up on things. No complex features, just tasks and dates.
           </p>
-          <Button
-            size="lg"
-            onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
-            className="text-lg px-8 py-4"
-          >
-             Get Started Free
-          </Button>
-          <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-            Single-user app - Your data stays in your Google Drive
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            A personal project by <a href="https://linkedin.com/in/rahul-bedjavalge" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Rahul Bedjavalge</a>
           </p>
         </div>
 
@@ -439,13 +426,6 @@ ALLOWED_EMAIL=your@email.com`}</pre>
           <p className="text-gray-600 dark:text-gray-400 mb-8">
             Start using Nxt Action in 30 seconds.
           </p>
-          <Button
-            size="lg"
-            onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
-            className="text-lg px-8 py-4"
-          >
-             Get Started Free
-          </Button>
         </div>
 
         {/* Footer */}
@@ -457,8 +437,15 @@ ALLOWED_EMAIL=your@email.com`}</pre>
             <a href="https://github.com/rahulbedjavalge/nxt-action" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
               GitHub
             </a>
+            <a href="https://linkedin.com/in/rahul-bedjavalge" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
+              LinkedIn
+            </a>
+            <a href="https://x.com/rahulinberlin" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
+              Twitter
+            </a>
           </div>
-          <p>Built with Next.js - Data stored in Google Drive - No tracking</p>
+          <p className="mb-2">Built with Next.js • Data stored in Google Drive • No tracking</p>
+          <p className="text-xs text-gray-400 dark:text-gray-500">© {new Date().getFullYear()} Rahul Bedjavalge. All rights reserved.</p>
         </footer>
       </main>
     </div>
