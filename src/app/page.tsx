@@ -271,7 +271,7 @@ export default function LandingPage() {
                     Clone the Repository
                   </h3>
                   <pre className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto font-mono text-sm">
-git clone https://github.com/yourusername/nxt-action.git
+git clone https://github.com/rahulbedjavalge/nxt-action.git
 cd nxt-action
 npm install</pre>
                 </div>
@@ -454,7 +454,7 @@ ALLOWED_EMAIL=your@email.com`}</pre>
             <Link href="/contact" className="hover:text-gray-900 dark:hover:text-white">
               Contact
             </Link>
-            <a href="https://github.com/yourusername/nxt-action" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
+            <a href="https://github.com/rahulbedjavalge/nxt-action" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
               GitHub
             </a>
           </div>
