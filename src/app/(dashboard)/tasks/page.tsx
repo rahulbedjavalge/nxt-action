@@ -1,7 +1,7 @@
 import { auth } from "@/lib/auth";
 import { readDb } from "@/lib/driveStore";
 import { TasksContent } from "./TasksContent";
-import type { Contact } from "@/types";
+import type { Contact, Task } from "@/types";
 
 export const dynamic = "force-dynamic";
 
@@ -12,7 +12,7 @@ export default async function TasksPage() {
     return null;
   }
 
-  let tasks = [];
+  let tasks: Task[] = [];
   let contacts: Contact[] = [];
   let error: string | null = null;
 
